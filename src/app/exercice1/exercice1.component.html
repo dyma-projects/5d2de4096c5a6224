@@ -2,7 +2,9 @@
 <br/>
 <br/>
 <h3>Exercice 1 : mise en place de Output et Input </h3>
-<app-exercice1-enfant></app-exercice1-enfant>
+<app-exercice1-enfant [compteur]="compteur" (change)="changeCompteur($event)"></app-exercice1-enfant>
 <br/>
+<!-- je n'ai pas modifié le html existant mais on aurait pu, plus simplement,
+	interpoler compteur à la place de result -->
 <span> compteur : {{ result }}</span>
 <hr>
